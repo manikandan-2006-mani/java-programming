@@ -1,0 +1,19 @@
+with Ada.Text_IO, Ada.Integer_Text_IO;
+use Ada;
+
+procedure Solution is
+   N, Sum, I : Integer;
+begin
+   Integer_Text_IO.Get(N);
+   Sum := 0;
+   for I in 1 .. N / 2 loop
+      if N mod I = 0 then
+         Sum := Sum + I;
+      end if;
+   end loop;
+   if Sum > N then
+      Text_IO.Put_Line("Abundant Number");
+   else
+      Text_IO.Put_Line("Not Abundant Number");
+   end if;
+end Solution;
