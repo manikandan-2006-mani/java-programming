@@ -7,7 +7,7 @@ public class Solution {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
 
-        if (num >= 100 && num <= 999) { // Check for 3-digit number
+        if (num >= 100 && num <= 999) { 
             int original = num;
             int reverse = 0;
 
