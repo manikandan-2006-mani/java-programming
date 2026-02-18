@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+     static int find(int a){
+         int sum=0;
+         int rem;
+         while(a!=0){
+             rem=a%10;
+             sum=rem+sum;
+             a=a/10;
+           }
+         return sum;
+     }
+    public static void main(String[] args) {
+        Scanner se=new Scanner(System.in);
+        int a=se.nextInt();
+        
+        while(a/10!=0){
+              a=find(a);
+        }
+        System.out.println(a);
+        
+    }
+}
