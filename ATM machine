@@ -1,0 +1,39 @@
+import java.io.*;
+        import java.util.*;
+        import java.text.*;
+        import java.math.*;
+        import java.util.regex.*;
+
+        public class Solution {
+            public static void main(String args[] ) throws Exception {
+                Scanner se=new Scanner(System.in);
+                int a=se.nextInt();
+                System.out.println("Total number of notes:");
+                int i=a/500;
+                System.out.println("500 :"+" "+i);
+                int b=a-i*500; 
+                int k=b/100;
+                System.out.println("100 :"+" "+k);
+                int c=b-k*100;
+                int l=c/50;
+                System.out.println("50 :"+" "+l);
+                int d=c-l*50;
+                int m=d/20;
+                System.out.println("20 :"+" "+m);
+                int e=d-m*20;
+                int n=e/10;
+                System.out.println("10 :"+" "+n);
+                int f=e-n*10;
+                int o=f/5;
+                System.out.println("5 :"+" "+o);
+                int g=f-o*5;
+                int p=g/2;
+                System.out.println("2 :"+" "+p);
+                int h=g-p*2;
+                int q=h/1;
+                System.out.println("1 :"+" "+q);
+                
+               
+               
+            }
+        }
