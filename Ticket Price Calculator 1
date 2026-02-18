@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner se=new Scanner(System.in);
+        int a=se.nextInt();
+        String b=se.next();
+        int t=0;
+        
+         if(a<12 && (b.equals("saturday")||b.equals("sunday"))){
+         System.out.println("80");}
+        else if(a<12){
+            System.out.println("100");
+           }
+        else if(a>=12 && a<=59 && (b.equals("saturday")||b.equals("sunday"))  ){
+            System.out.println("120");
+        }
+        else if(a>=12 && a<=59 ){
+            System.out.println("150");
+        }
+        else if(a>=60 && (b.equals("saturday")||b.equals("sunday"))){
+          System.out.println("70");}
+        else{
+            System.out.println("90");
+        }
+    }
+}
+}
