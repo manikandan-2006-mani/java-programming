@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner se=new Scanner(System.in);
+        Long a=se.nextLong();
+        int count=0;
+        while(a!=0){
+         count++;
+        a=a/10;}
+        System.out.println(count);
+    }
+}
