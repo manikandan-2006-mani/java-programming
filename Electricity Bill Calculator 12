@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner se=new Scanner(System.in);
+        int a=se.nextInt();
+        if(a<=100){
+          System.out.println(a*5);}
+        else if(a>100 && a<=200){
+             System.out.println((a-100)*7+500);}
+        else{
+             System.out.println((a-200)*10+1200);}
+    }
+}
