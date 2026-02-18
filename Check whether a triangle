@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[] ) throws Exception {
+        Scanner se=new Scanner(System.in);
+        int a=se.nextInt();
+        int b=se.nextInt();
+        int c=se.nextInt();
+        if(a==b && a==c && b==c){
+          System.out.println("Equilateral");}
+        else if(a==b || b==c || a==c){
+          System.out.println("Isosceles");}
+        else{
+            System.out.println("Scalene");
+        }
+    }
+}
