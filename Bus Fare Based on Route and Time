@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner se=new Scanner(System.in);
+        char c=se.next().charAt(0);
+        int a=se.nextInt();
+        if(c=='A' && (a>=0 && a<12)){
+            System.out.println(25);
+         }
+        else if(c=='A' && a>=12){
+        System.out.println(30);}
+         else if(c=='B' && (a>=0 && a<12)){
+            System.out.println(20);
+         }
+        else if(c=='B' && a>=12){
+        System.out.println(25);}
+        else if(c=='C' && (a>=0 && a<12)){
+            System.out.println(15);
+         }
+        else if(c=='C' && a>=12){
+        System.out.println(20);}
+    }
+}
+}
