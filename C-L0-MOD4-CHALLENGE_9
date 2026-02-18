@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+     static int f(int a,int count){
+           int val=1;
+           for(int i=0;i<count;i++){
+                val=val*a;  }
+         return val;
+     }
+    public static void main(String[] args) {
+        Scanner se=new Scanner(System.in);
+        int a=se.nextInt();
+        int temp=a;
+        int arm=0;
+        int tamp=a;
+        int rem;
+        int count=0;
+        
+        if(a>0){
+        while(a!=0){
+            count++;
+             a=a/10;}
+        while(temp!=0){
+               rem=temp%10;
+               arm=arm+f(rem,count);
+               
+               temp=temp/10;
+            
+               }
+        if(arm==tamp){
+        System.out.println("Armstrong number");}
+        else{
+           System.out.println("Not an Armstrong number");
+        }
+  }}
+}
+}
