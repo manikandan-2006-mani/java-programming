@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner se=new Scanner(System.in);
+        int a=se.nextInt();
+        int b=se.nextInt();
+        int count=0;
+        int rem;
+        while(a!=0){
+            rem=a%10;
+             if(rem==b){
+                 count++;}
+             a=a/10;}
+        System.out.println(count);
+    }
+}
