@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner se=new Scanner(System.in);
+        long a=se.nextLong();
+        long rev=0;
+        long rem;
+        if(a>0){
+        while(a!=0){
+          rem= a%10;
+          rev= rev*10+rem;
+        a=a/10;}
+        System.out.println(rev);
+    }
+}}
