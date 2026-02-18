@@ -1,0 +1,37 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+     static boolean f(long rem){
+         int count=0;
+        for(int i=1;i<=rem;i++){
+           if(rem%i==0){
+                  count++;}}
+       if(count==2){
+           return true;}
+        else{
+            return false;
+        }}
+    public static void main(String[] args) {
+        Scanner se=new Scanner(System.in);
+        long a=se.nextLong();
+        long rem;
+        long rev=0;
+        while(a!=0){
+            rem=a%10;
+            if(f(rem)){
+                rev=rev*10+rem;
+                 }
+            a=a/10;
+              }
+        while(rev!=0){
+            System.out.print(rev%10+" ");
+            rev=rev/10;
+        }
+        
+    }
+}
+}
