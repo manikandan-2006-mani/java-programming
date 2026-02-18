@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner se=new Scanner(System.in);
+        int a=se.nextInt();
+        int b=se.nextInt();
+        int count=0;
+        int rem;
+        int i;
+        
+        for(i=a;i<=b;i++){
+               
+                  int temp=i;
+                  int sum=0;
+                   while(temp!=0){
+                       rem=temp%10;
+                       sum=sum+rem;
+                   temp=temp/10;}
+                       if(i%sum==0){
+                             count++;}
+                       
+                   }
+             
+                    System.out.println(count); 
+              
+          
+                }
+     
+            }
