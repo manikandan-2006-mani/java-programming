@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    static int fact(int rem){
+            
+            int b=1;
+              while(rem!=0){
+                  b=b*rem;
+                rem=rem-1;
+                   }
+    return b;}
+
+    public static void main(String[] args) {
+        Scanner se=new Scanner(System.in);
+        int a=se.nextInt();
+        int temp=a;
+        int rem;
+        int strong=0;
+        while(a!=0){
+        rem=a%10;
+         strong=strong+fact(rem);
+         a=a/10;}
+        if(temp==strong){
+           System.out.print("Strong Number");}
+        else{
+            System.out.print("Not a strong number");
+        }
+        
+    }
+}
+}
