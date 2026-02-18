@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner se=new Scanner(System.in);
+        int s=se.nextInt();
+        int arr[]=new int[s];
+        int count=0;
+        int c=0;
+        int z=0;
+        for(int i=0;i<s;i++){
+           arr[i]=se.nextInt();}
+         int a=arr[s-1];
+        for(int i=0;i<s;i++){
+                if(arr[i]==a  ){
+                    if(arr[i]>arr[i-1]){
+                    count ++;}
+                    else{
+                        c++;
+                    }
+                    
+                     }
+               else if(arr[i]<arr[i+1]){
+                     count++; 
+               }
+                 else if(arr[i]>arr[i+1]){
+                     c++;
+                 }
+              
+    }
+        if(count==s || c==s){
+            System.out.println("Monotonic");
+            }
+        else{
+                   System.out.println("Not Monotonic");}
+}}
